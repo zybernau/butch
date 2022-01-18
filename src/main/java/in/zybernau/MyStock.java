@@ -88,4 +88,11 @@ public class MyStock extends PanacheEntityBase {
     this.profitpercent = profitpercent;
   }
 
+  public String toString() {
+    return this.stockname + "=>" + String.valueOf(this.buyprice)
+    + "," + String.valueOf(this.sellprice)
+    + "," + String.valueOf(this.margin)
+    + "," + String.valueOf(this.profitpercent);
+  }
+
 }

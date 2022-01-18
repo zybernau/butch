@@ -22,8 +22,8 @@ public class Butch {
 
     private void runQueries() {
         List<Stocks> stockL = Stocks.listAll();
-
-        // MyStock.deleteAll();
+        // delete all rows before insert
+        MyStock.dall();
         Stocks currentStock;
         MyStock mystock;
         System.out.println(stockL);
